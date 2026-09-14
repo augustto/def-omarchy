@@ -1,0 +1,16 @@
+# Run omarchy-restart-xcompose to apply changes
+
+# Include fast emoji access
+include "/usr/share/omarchy/default/xcompose"
+
+# Identification
+<Multi_key> <space> <n> : "Augusto"
+<Multi_key> <space> <e> : ""
+
+# Windows Intl-style cedilla. Must stay after the include above: libxkbcommon
+# resolves duplicate compose sequences with "last one wins", so a rule placed
+# before the include gets silently overridden by the default en_US.UTF-8
+# table's <dead_acute> <c> -> "ć" (Polish/Slavic acute c). Requires the US
+# Intl (dead keys) keyboard layout, toggled with Ctrl+Shift+K.
+<dead_acute> <c> : "ç"
+<dead_acute> <C> : "Ç"

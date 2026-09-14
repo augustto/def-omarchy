@@ -1,0 +1,49 @@
+# Environment / secret files
+.env
+.env.*
+*.env
+.netrc
+.npmrc
+.pypirc
+
+# Private keys and certificates
+*.pem
+*.key
+*.p12
+*.pfx
+*.crt
+id_rsa*
+id_ecdsa*
+id_ed25519*
+*.ppk
+known_hosts
+.ssh/
+
+# Cloud / service credentials
+.aws/
+.gnupg/
+.docker/config.json
+.kube/config
+credentials.json
+credentials.yml
+credentials.yaml
+*_token
+*.token
+token.json
+
+# Generic secret-name catch-alls
+*secret*
+*password*
+*credential*
+
+# Shell / app history (can leak commands, tokens typed inline, visited URLs)
+.zsh_history
+.bash_history
+.python_history
+.lesshist
+.wget-hsts
+
+# Editor/OS cruft
+*.bak
+*.orig
+.DS_Store
